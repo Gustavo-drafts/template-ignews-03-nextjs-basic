@@ -4,7 +4,7 @@ import { SubscribeButton } from "../components/SubscribeButton";
 import styles from './home.module.scss';
 
 export default function Home(props) {
-  console.log(props);
+  
 
 
   return (
@@ -33,6 +33,7 @@ export default function Home(props) {
 // Efetuando uma chamanda a API via SSR - server side rendering 
 
 export const getServerSideProps: GetServerSideProps = async () => {
+  console.log('teste')
   return {
     props: {
       nome: 'Gustavo'
