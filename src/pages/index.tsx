@@ -1,8 +1,12 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { SubscribeButton } from "../components/SubscribeButton";
 import styles from './home.module.scss';
 
-export default function Home() {
+export default function Home(props) {
+  console.log(props);
+
+
   return (
     <>
       <Head>
@@ -23,4 +27,15 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+
+// Efetuando uma chamanda a API via SSR - server side rendering 
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      nome: 'Gustavo'
+    }
+  }
 }
