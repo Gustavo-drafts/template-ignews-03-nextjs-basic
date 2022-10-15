@@ -21,11 +21,29 @@ export const authOptions = {
 
       try {
         await fauna.query(
-          q.Create( //inserir dados no banco
-            q.Collection('users'),
-            { data: { email } }
+          q.If(
+            q.Not(
+              q.Exists(
+                q.Match(
+                  q.Index('user_by_email'),
+                  q.Casefold(user.email)
+                )
+              )
+            ),
+            q.Create(
+              q.Collection('users'),
+              { data: { email }}
+            ),
+            q.Get(
+              q.Match(
+                q.Index('user_by_email'),
+                q.Casefold(user.email)
+              )
+            )
           )
         )
+        console.log(user)
+        
 
         return true
 
