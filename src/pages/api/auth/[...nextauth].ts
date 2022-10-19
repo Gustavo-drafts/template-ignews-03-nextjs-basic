@@ -1,9 +1,11 @@
 import { query as q } from 'faunadb';
 
 import NextAuth from "next-auth";
+import { getToken } from "next-auth/jwt";
 import GithubProvider from "next-auth/providers/github";
 import { fauna } from '../../../services/fauna';
 
+const secret = process.env.NEXTAUTH_SECRET
 
 
 export const authOptions = {
@@ -12,7 +14,7 @@ export const authOptions = {
     GithubProvider({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
-      authorization: { params: { scope: "read:user" } }
+      authorization: { params: { scope: "read:user" } },
     }),
   ],
   callbacks: {
@@ -32,7 +34,7 @@ export const authOptions = {
             ),
             q.Create(
               q.Collection('users'),
-              { data: { email }}
+              { data: { email } }
             ),
             q.Get(
               q.Match(
@@ -43,7 +45,7 @@ export const authOptions = {
           )
         )
         console.log(user)
-        
+
 
         return true
 
@@ -52,6 +54,8 @@ export const authOptions = {
       }
     }
   },
+  secret: process.env.NEXTAUTH_SECRET
+
 }
 
 export default NextAuth(authOptions)
