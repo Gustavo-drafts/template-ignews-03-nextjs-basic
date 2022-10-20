@@ -89,6 +89,46 @@
   "resolved" "https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.0.2.tgz"
   "version" "1.0.2"
 
+"@prismicio/client@^6.7.1":
+  "integrity" "sha512-XIFSZtLjxnpQavu2R7jIqmnFvUqRRzHwjXHt/fb0N550rFLQM4tnwDuSR3VY6k/TG+M5zvH+PHJuXGNnv73qUQ=="
+  "resolved" "https://registry.npmjs.org/@prismicio/client/-/client-6.7.1.tgz"
+  "version" "6.7.1"
+  dependencies:
+    "@prismicio/helpers" "^2.3.3"
+    "@prismicio/types" "^0.2.3"
+
+"@prismicio/helpers@^2.3.3", "@prismicio/helpers@^2.3.5":
+  "integrity" "sha512-lL9TQG+GKtOATvLOlTFoaDfEZOgrNXHRuD+TxCSwLPKRBtYVs6zBoU6SkkcISm/DCe8PwGD0zo44zDdPtFJuBA=="
+  "resolved" "https://registry.npmjs.org/@prismicio/helpers/-/helpers-2.3.5.tgz"
+  "version" "2.3.5"
+  dependencies:
+    "@prismicio/richtext" "^2.1.1"
+    "@prismicio/types" "^0.2.3"
+    "escape-html" "^1.0.3"
+    "imgix-url-builder" "^0.0.3"
+
+"@prismicio/next@^0.1.7":
+  "integrity" "sha512-0//J7qQQzEgJrRIJBA9NHsJGaSmryR1XJoEZpOXgcSoqkPrf0y1YTj9yq9Oo5Q6t8f4HU94YMRW6Pex7O23Y9Q=="
+  "resolved" "https://registry.npmjs.org/@prismicio/next/-/next-0.1.7.tgz"
+  "version" "0.1.7"
+  dependencies:
+    "@prismicio/client" "^6.7.1"
+    "@prismicio/helpers" "^2.3.5"
+    "@prismicio/types" "^0.2.3"
+    "imgix-url-builder" "^0.0.3"
+
+"@prismicio/richtext@^2.1.1":
+  "integrity" "sha512-/99JR2NUU2WV0025eAIqjd9OnF4ITaM57SVuhLc1XBUgnJe0HZrC9f24YKVW43jFR5HYTJtLgz01WjEddymqmA=="
+  "resolved" "https://registry.npmjs.org/@prismicio/richtext/-/richtext-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "@prismicio/types" "^0.2.0"
+
+"@prismicio/types@^0.2.0", "@prismicio/types@^0.2.3":
+  "integrity" "sha512-mHsZ9ora8He6PAn+Q/0MCVdlfc0Xv8rSEYJyfwywDApuvssGvgUbeHE6XTqPhK2dJwb0mAkJzCpZiQJRt9+bvw=="
+  "resolved" "https://registry.npmjs.org/@prismicio/types/-/types-0.2.3.tgz"
+  "version" "0.2.3"
+
 "@rushstack/eslint-patch@^1.0.8":
   "integrity" "sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A=="
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz"
@@ -571,6 +611,11 @@
     "is-date-object" "^1.0.1"
     "is-symbol" "^1.0.2"
 
+"escape-html@^1.0.3":
+  "integrity" "sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow=="
+  "resolved" "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
+  "version" "1.0.3"
+
 "escape-string-regexp@^4.0.0":
   "integrity" "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA=="
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
@@ -1009,6 +1054,11 @@
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz"
   "version" "5.2.0"
 
+"imgix-url-builder@^0.0.3":
+  "integrity" "sha512-8Oc2Cn4+jF06sEfJcVPlWYfD2F6RjrwIMbk1xEzux8unoB5LsvFc/GL1BQ47HPaeE12ReX2nMUcjUslGYWLxHA=="
+  "resolved" "https://registry.npmjs.org/imgix-url-builder/-/imgix-url-builder-0.0.3.tgz"
+  "version" "0.0.3"
+
 "immutable@^4.0.0":
   "integrity" "sha512-zIE9hX70qew5qTUjSS7wi1iwj/l7+m54KWU247nhM3v806UdGj1yDndXj+IOYxxtW9zyLI+xqFNZjTuDaLUqFw=="
   "resolved" "https://registry.npmjs.org/immutable/-/immutable-4.0.0.tgz"
@@ -1329,7 +1379,7 @@
     "preact-render-to-string" "^5.1.19"
     "uuid" "^8.3.2"
 
-"next@^12.2.5", "next@^12.3.1", "next@>=10.2.0":
+"next@^11 || ^12", "next@^12.2.5", "next@^12.3.1", "next@>=10.2.0":
   "integrity" "sha512-l7bvmSeIwX5lp07WtIiP9u2ytZMv7jIeB8iacR28PuUEFG5j0HGAPnMqyG5kbZNBG2H7tRsrQ4HCjuMOPnANZw=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.3.1.tgz"
   "version" "12.3.1"
@@ -1618,7 +1668,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@*", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@17.0.2":
+"react@*", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17 || ^18", "react@^17.0.2 || ^18", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
