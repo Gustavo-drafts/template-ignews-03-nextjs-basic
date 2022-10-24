@@ -2,7 +2,6 @@
 import type { InferGetStaticPropsType, GetStaticPropsContext } from 'next'
 import Head from 'next/head'
 import styles from './styles.module.scss'
-import { createClient } from '@prismicio/client'
 
 type PostsProps = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -43,17 +42,20 @@ export default function Posts({ posts }: PostsProps) {
 }
 
 export async function getStaticProps({
-  params
 }: GetStaticPropsContext) {
-  const client = createClient('posts', params)
-
-  const posts = await client.getAllByType('posts')
+  const client = createClient('post')
   
-  console.log(client);
+  
+  const posts = await client.getAllByType('posts', {
+    fetchLinks: ['post.title'],
+  })
+  
+  console.log(posts)
+  
   
   return {
     props: {
-      posts,
+      posts
     }
   }
 }
