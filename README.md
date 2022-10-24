@@ -55,7 +55,7 @@ yarn dev
 #
 ## 🫱🏻‍🫲🏽 Instrutores
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+Agradeço às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
