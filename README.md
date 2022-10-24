@@ -1,8 +1,6 @@
 
 # **Ignews**
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
 <img src="./ignews-preview.png" alt="ignews">
 
 > Aplicação de newsletter onde usuário irá comprar assinatura. Obtendo acesso aos conteúdos poderá criar postagens. Usuários não assinados poderão apenas vizualizar os conteúdos do Post.
