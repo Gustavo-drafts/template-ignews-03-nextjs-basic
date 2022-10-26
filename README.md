@@ -1,31 +1,33 @@
+[![en](https://img.shields.io/badge/lang-en-critical.svg)](https://github.com/gutoo01/template-ignews-03-nextjs-basic/blob/main/readme.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-blue.svg)](https://github.com/gutoo01/template-ignews-03-nextjs-basic/blob/main/readme.pt-br.md)
 
 # **Ignews**
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
+<!---These are examples. See https://shields.io for others or to customize this shield set. You might want to include dependencies, project status and license information here--->
 
 <img src="./ignews-preview.png" alt="ignews">
 
-> Aplicação de newsletter onde usuário irá comprar assinatura. Obtendo acesso aos conteúdos poderá criar postagens. Usuários não assinados poderão apenas vizualizar os conteúdos do Post.
+> Newsletter application where user will buy subscription. Once you have access to the content, you can create posts. Unsubscribed users will only be able to view the contents of the Post.
 
 #
 
-### O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+### The project is still under development and the next updates will focus on the following tasks:
 
-- [x] Layout da aplicação
-- [x] Estilizar a aplicação com SASS
-- [x] Autenticação JWT via NextAuth
-- [x] Criar página rota de Posts
-- [x] Integrar oAuth com FaunaDB
-- [ ] Integrar API de pagamento Stripe
-- [ ] Integrar API de pagamento ao FaunaDB
-- [ ] Implementar via CMS Prismic
+- [x] Application layout
+- [x] Style the application with SASS
+- [x] JWT authentication via NextAuth
+- [x] Create Posts Route Page
+- [x] Integrate oAuth with FaunaDB
+- [ ] Integrate Stripe Payment API
+- [ ] Integrate payment API with FaunaDB
+- [ ] Implement via CMS Prismic
 
 #
-## 💻 Pré-requisitos:
+## 💻 Prerequisites:
 
-Antes de começar, verifique os seguintes requisitos:
+Before starting, check the following requirements:
 
-- Requer versões:  
+- Requires versions:
 
 ```
 "@stripe/stripe-js": "^1.41.0",
@@ -36,11 +38,11 @@ Antes de começar, verifique os seguintes requisitos:
 "@prismicio/next": "^0.1.7"
 ```
 
-## 🚀 Instalando **ignews**
+## 🚀 Installing **ignnews**
 
-Para instalar o **Ignews**, siga estas etapas:
+To install **Ignews**, follow these steps:
 
-Win, Linux e macOS:
+Win, Linux and macOS:
 
 ```
 npm i
@@ -55,15 +57,15 @@ yarn dev
 ```
 
 #
-## 🫱🏻‍🫲🏽 Instrutores
+## 🫱🏻‍🫲🏽 Instructors
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+We thank the following people who contributed to this project:
 
 <table>
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/diego3g.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://github.com/diego3g.png" width="100px;" alt="Photo by Iuri Silva on GitHub"/><br>
         <sub>
           <b>Diego Fernandes</b>
         </sub>
@@ -71,7 +73,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/maykbrito.png" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+        <img src="https://github.com/maykbrito.png" width="100px;" alt="Photo by Mark Zuckerberg"/><br>
         <sub>
           <b>Mayk Brito</b>
         </sub>
@@ -79,7 +81,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/jakeliny.png" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <img src="https://github.com/jakeliny.png" width="100px;" alt="Photo of Steve Jobs"/><br>
         <sub>
           <b>Jakeliny Gracielly</b>
         </sub>
@@ -88,4 +90,4 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
+[⬆ Back to top](#project-name)<br>
