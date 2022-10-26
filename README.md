@@ -1,5 +1,5 @@
-[![en](https://img.shields.io/badge/lang-en-critical.svg)](https://github.com/gutoo01/template-ignews-03-nextjs-basic/blob/main/readme.md)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-blue.svg)](https://github.com/gutoo01/template-ignews-03-nextjs-basic/blob/main/readme.pt-br.md)
+[![en](https://img.shields.io/badge/lang-en-critical.svg)](https://github.com/gutoo01/template-ignews-03-nextjs-basic/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-blue.svg)](https://github.com/gutoo01/template-ignews-03-nextjs-basic/blob/main/README.pt-br.md)
 
 # **Ignews**
 
