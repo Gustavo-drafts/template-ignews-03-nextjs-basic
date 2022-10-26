@@ -3,8 +3,11 @@
 
 # **Ignews**
 
+<<<<<<< HEAD
 <!---These are examples. See https://shields.io for others or to customize this shield set. You might want to include dependencies, project status and license information here--->
 
+=======
+>>>>>>> 7abf4238e257fdeb1767a36d2ff9b8628c99b1d7
 <img src="./ignews-preview.png" alt="ignews">
 
 > Newsletter application where user will buy subscription. Once you have access to the content, you can create posts. Unsubscribed users will only be able to view the contents of the Post.
@@ -59,7 +62,11 @@ yarn dev
 #
 ## 🫱🏻‍🫲🏽 Instructors
 
+<<<<<<< HEAD
 We thank the following people who contributed to this project:
+=======
+Agradeço às seguintes pessoas que contribuíram para este projeto:
+>>>>>>> 7abf4238e257fdeb1767a36d2ff9b8628c99b1d7
 
 <table>
   <tr>
